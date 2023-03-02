@@ -1,3 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: url(images/bg-main-desktop.png) no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardsImg {
+    width: 50%;
+}
+
+.cardRecto {
+    background: url(images/bg-card-front.png) no-repeat;
+}
+
+.cardVerso {
+    background: url(images/bg-card-back.png) no-repeat;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+
+    margin-bottom: 10px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.inputsDate {
+    display: flex;
+}
+
+
+label {
+    margin-bottom: 6px;
+}
+.labelsDate {
+    display: flex;
+    justify-content: space-between;
 }
