@@ -43,24 +43,31 @@
     <div class="form">
       <form>
         <label for="name">Cardholder name</label>
-        <input type="text" placeholder="John Doe" id="name" />
+        <input type="text" placeholder="John Doe" class="inputNameNumber" id="name" />
 
         <label for="cardNumber">Card number</label>
         <input
           type="number"
           id="cardNumber"
+          class="inputNameNumber"
           placeholder="0000 0000 0000 0000"
         />
 
-        <div class="labelsDate">
-          <label for="date">Exp. date (MM/YY)</label>
-          <label for="cvc">CVC</label>
-        </div>
-
         <div class="inputsDate">
-          <input type="text" class="inputDate" id="date" placeholder="09" />
-          <input type="text" class="inputDate" id="date" placeholder="24" />
-          <input type="number" class="inputDate" id="cvc" placeholder="123" />
+
+          <div class="expiration">
+            <label for="date">Exp. date (MM/YY)</label>
+            <div class="inputDate">
+              <input type="text" class="inputDate" id="date" placeholder="09" />
+              <input type="text" class="inputDate" id="date" placeholder="24" />
+            </div>
+          </div>
+
+          <div class="cvc">
+            <label for="cvc">CVC</label>
+            <input type="text" class="inputDate" id="cvc" placeholder="123" />
+          </div>
+
         </div>
 
         <button type="submit">Confirm</button>
