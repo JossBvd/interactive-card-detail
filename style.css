@@ -32,10 +32,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
-.cardRecto div {
+.cardRecto div:not(.monthYear) {
     padding: 40px;
     overflow: hidden;
 }
@@ -64,6 +64,10 @@ body {
     display: flex;
     justify-content: space-between;
     color: rgb(190, 190, 190);
+}
+
+.monthYear {
+    display: flex;
 }
 
 .numCardRecto {

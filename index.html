@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
 
     <title>Frontend Mentor | Interactive card details form</title>
 
@@ -35,16 +36,20 @@
           <span id="petitCercle"></span>
         </div>
         <div class="numCardRecto">
-          <p>0000 0000 0000 0000</p>
+          <p id="cardNumberOwner">0000 0000 0000 0000</p>
         </div>
         <div class="cardInfos">
-          <p>nom</p>
-          <p>date expiration</p>
+          <p id="cardOwner">John Doe</p>
+          <div class="monthYear">
+            <p id="monthExpiration">09</p>
+            <span>/</span>
+            <p id="yearExpiration">24</p>
+          </div>
         </div>
       </div>
 
       <div class="cardVerso">
-        <p>000</p>
+        <p id="cardCvc">000</p>
       </div>
     </div>
 
@@ -72,7 +77,12 @@
             <label for="date">Exp. date (MM/YY)</label>
             <div class="inputDate">
               <input type="text" class="inputDate" id="date" placeholder="09" />
-              <input type="text" class="inputDate" id="date" placeholder="24" />
+              <input
+                type="text"
+                class="inputDate"
+                id="date2"
+                placeholder="24"
+              />
             </div>
             <p></p>
           </div>
