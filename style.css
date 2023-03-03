@@ -7,21 +7,91 @@ body {
     background: url(images/bg-main-desktop.png) no-repeat;
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
-.cardsImg {
+.cardImg {
     width: 50%;
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 }
 
 .cardRecto {
-    background: url(images/bg-card-front.png) no-repeat;
+    width: 447px;
+    height: 245px;
+    margin: auto;
+    margin-bottom: 30px;
+    background: url(images/bg-card-front.png) no-repeat center;
+    position: relative;
+    right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cardRecto div {
+    padding: 40px;
+    overflow: hidden;
+}
+
+.cercles {
+    display: flex;
+    align-items: center;
+}
+
+.cercles span {
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.cercles span#petitCercle {
+    height: 15px;
+    width: 15px;
+    background: none;
+    margin-left: 15px;
+}
+
+.cardInfos {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(190, 190, 190);
+}
+
+.numCardRecto {
+    font-size: 1.8rem;
+    position: relative;
+    top: 15px;
+    letter-spacing: 0.3rem;
 }
 
 .cardVerso {
-    background: url(images/bg-card-back.png) no-repeat;
+    background: url(images/bg-card-back.png) no-repeat center;
+    width: 447px;
+    height: 245px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    letter-spacing: 6px;
 }
+
+.cardVerso p {
+    margin-right: 45px;
+}
+
+
+/* .form {
+    width: auto;
+} */
 
 form {
     display: flex;
@@ -58,8 +128,14 @@ div.expiration {
     flex-direction: column;
 }
 
-
-
 label {
     margin-bottom: 6px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(34,9,47);
+    color: whitesmoke;
+    cursor: pointer;
 }

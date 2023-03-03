@@ -30,31 +30,43 @@
   <body>
     <div class="cardImg">
       <div class="cardRecto">
-        <p>numero de carte</p>
+        <div class="cercles">
+          <span></span>
+          <span id="petitCercle"></span>
+        </div>
+        <div class="numCardRecto">
+          <p>0000 0000 0000 0000</p>
+        </div>
         <div class="cardInfos">
           <p>nom</p>
           <p>date expiration</p>
         </div>
       </div>
+
       <div class="cardVerso">
-        <p>CVC</p>
+        <p>000</p>
       </div>
     </div>
+
     <div class="form">
       <form>
         <label for="name">Cardholder name</label>
-        <input type="text" placeholder="John Doe" class="inputNameNumber" id="name" />
+        <input
+          type="text"
+          placeholder="John Doe"
+          class="inputNameNumber"
+          id="name"
+        />
 
         <label for="cardNumber">Card number</label>
         <input
-          type="number"
+          type="text"
           id="cardNumber"
           class="inputNameNumber"
           placeholder="0000 0000 0000 0000"
         />
 
         <div class="inputsDate">
-
           <div class="expiration">
             <label for="date">Exp. date (MM/YY)</label>
             <div class="inputDate">
@@ -67,7 +79,6 @@
             <label for="cvc">CVC</label>
             <input type="text" class="inputDate" id="cvc" placeholder="123" />
           </div>
-
         </div>
 
         <button type="submit">Confirm</button>
