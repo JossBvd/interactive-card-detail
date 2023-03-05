@@ -123,9 +123,6 @@ input[type="text"] {
     
 }
 
-/* input:invalid {
-    border: 2px solid red;
-  } */
 
 label[for="cvc"] {
     margin: 0;
@@ -154,6 +151,11 @@ button {
     background-color: rgb(34,9,47);
     color: whitesmoke;
     cursor: pointer;
+}
+
+.error {
+    color: crimson;
+    font-weight: bold;
 }
 
 /* ---- div succes ---------------------------------- */

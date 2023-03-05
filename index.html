@@ -67,6 +67,7 @@
           required
           
         />
+        <p class="error" id="pInput1"></p>
 
         <label for="cardNumber">Card number</label>
         <input
@@ -75,11 +76,10 @@
           class="inputNameNumber"
           placeholder="0000 0000 0000 0000"
           required
-          pattern="[0-9]"
-          minlength="16"
-          maxlength="16"
+          minlength="19"
+          maxlength="19"
         />
-        <p></p>
+        <p class="error" id="pInput2"></p>
 
         <div class="inputsDate">
           <div class="expiration">
@@ -92,16 +92,18 @@
                 id="date2"
                 placeholder="24"
                 required
-                [0-9]
+                minlength="2" maxlength="2"
               />
             </div>
-            <p></p>
+            <p class="error" id="pInput3"></p>
+            <p class="error" id="pInput4"></p>
           </div>
 
           <div class="cvc">
             <label for="cvc">CVC</label>
-            <input type="text" class="inputDate" id="cvc" placeholder="123" required [0-9] />
-            <p></p>
+            <input type="text" class="inputDate" id="cvc" placeholder="123" required minlength="3"
+            maxlength="3" />
+            <p class="error" id="pInput5"></p>
           </div>
         </div>
 
