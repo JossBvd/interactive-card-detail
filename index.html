@@ -12,6 +12,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
 
@@ -54,6 +56,7 @@
     </div>
 
     <div class="form">
+
       <form>
         <label for="name">Cardholder name</label>
         <input
@@ -61,6 +64,8 @@
           placeholder="John Doe"
           class="inputNameNumber"
           id="name"
+          required
+          
         />
 
         <label for="cardNumber">Card number</label>
@@ -69,6 +74,10 @@
           id="cardNumber"
           class="inputNameNumber"
           placeholder="0000 0000 0000 0000"
+          required
+          pattern="[0-9]"
+          minlength="16"
+          maxlength="16"
         />
         <p></p>
 
@@ -76,12 +85,14 @@
           <div class="expiration">
             <label for="date">Exp. date (MM/YY)</label>
             <div class="inputDate">
-              <input type="text" class="inputDate" id="date" placeholder="09" />
+              <input type="text" class="inputDate" id="date" placeholder="09" required minlength="2" maxlength="2"/>
               <input
                 type="text"
                 class="inputDate"
                 id="date2"
                 placeholder="24"
+                required
+                [0-9]
               />
             </div>
             <p></p>
@@ -89,13 +100,21 @@
 
           <div class="cvc">
             <label for="cvc">CVC</label>
-            <input type="text" class="inputDate" id="cvc" placeholder="123" />
+            <input type="text" class="inputDate" id="cvc" placeholder="123" required [0-9] />
             <p></p>
           </div>
         </div>
 
-        <button type="submit">Confirm</button>
+        <button type="submit" id="formButton">Confirm</button>
       </form>
+
+      <div class="succes">
+
+        <h2>Votre carte a bien été enregristré !</h2>
+        <i class="fa-regular fa-square-check fa-4x"></i>
+        <button type="submit">Reset</button>
+
+      </div>
     </div>
   </body>
 </html>
