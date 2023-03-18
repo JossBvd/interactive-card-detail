@@ -108,7 +108,7 @@ form p {
 
 input {
     width: 6rem;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     padding: 6px;
     border: 1px solid black;
     border-radius: 5px;
@@ -156,6 +156,11 @@ button {
 .error {
     color: crimson;
     font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#pInput3, #pInput4 {
+    display: inline;
 }
 
 /* ---- div succes ---------------------------------- */
