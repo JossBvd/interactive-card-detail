@@ -5,7 +5,7 @@
 
 body {
     background: url(images/bg-main-desktop.png) no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -181,4 +181,25 @@ i {
     width: 50%;
 }
 
+/* -------------------media query ----------------- */
+
+@media screen and (max-width: 693px) {
+    body {
+        background: url(images/bg-main-mobile.png) no-repeat;
+    }
+
+    .cardVerso, form {
+        margin-bottom: 40px;
+    }
+
+    .cardRecto {
+        position: static;
+        margin-bottom: 0;
+    }
+
+    .cardImg {
+        width: auto;
+    }
+
+}
 
